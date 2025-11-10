@@ -1,4 +1,4 @@
-# UTS Web Service Engineering – Muhammad Ade Ramadhani - 230104040213
+# 🚀 UTS Web Service Engineering – 230104040213
 
 Halo semua! 👋  
 Ini adalah project **UTS Web Service Engineering** punyaku yang dibuat menggunakan **Node.js + Express.js**.  
@@ -84,7 +84,7 @@ npm run dev
 # - npm
 # - major
 
-# Jika salah satu kosong (INVALID), maka response-nya seperti ini 👇
+# Jika salah satu kosong, maka response-nya seperti ini 👇
 
 {
   "status": "fail",
@@ -143,6 +143,16 @@ GET http://localhost:3000/api/info
   "author": "230104040213",
   "description": "RESTful API CRUD lengkap dengan validasi input dan endpoint info."
 }
+
+---
+
+## 👨‍💻 Developer Team
+
+# 🧑‍🏫 Dosen Pembimbing
+[![GitHub - Muhayat Lab](https://img.shields.io/badge/GitHub-Muhayat--Lab-181717?logo=github&style=for-the-badge)](https://github.com/muhayat-lab)
+
+# 💻 Developer
+[![GitHub - RamaKazuya](https://img.shields.io/badge/GitHub-RamaKazuya-0A66C2?logo=github&style=for-the-badge)](https://github.com/RamaKazuya)
 
 ---
 
