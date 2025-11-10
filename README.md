@@ -1,45 +1,61 @@
-# 🚀 UTS Web Service Engineering – 230104040213
-
-Halo semua! 👋  
-Ini adalah project **UTS Web Service Engineering** punyaku yang dibuat menggunakan **Node.js + Express.js**.  
-Tujuannya sederhana: bikin RESTful API yang bisa **CRUD (Create, Read, Update, Delete)** data mahasiswa dengan tampilan hasil yang rapi dan validasi lengkap.
+# UTS Web Service Engineering – 230104040213
 
 ---
 
-## 🧩 Fitur Utama
+## 👨‍💻 Developer Team
 
-✨ **GET** – Ambil semua data mahasiswa  
-✨ **GET by ID** – Ambil data berdasarkan `id`  
-✨ **POST** – Tambah data mahasiswa baru  
-✨ **PUT** – Update data mahasiswa  
-✨ **DELETE** – Hapus data mahasiswa  
-✨ **INFO** – Lihat informasi API  
+### Dosen Pembimbing
+[![GitHub - Muhayat Lab](https://img.shields.io/badge/GitHub-Muhayat--Lab-181717?logo=github&style=for-the-badge)](https://github.com/muhayat-lab)
+
+### Developer
+[![GitHub - RamaKazuya](https://img.shields.io/badge/GitHub-RamaKazuya-0A66C2?logo=github&style=for-the-badge)](https://github.com/RamaKazuya)
+
+**Nama:** Muhammad Ade Ramadhani  
+**NPM:** 230104040213  
+**Kelas:** TI23A
 
 ---
 
-## ⚙️ Cara Menjalankan Project
+## 🧠 Deskripsi Proyek
 
-# 1️⃣ Clone repo dari GitHub
+Proyek ini merupakan bagian dari tugas **UTS Web Service Engineering**,  
+yang bertujuan untuk membangun **RESTful API** menggunakan **Node.js dan Express.js**.  
+API ini berfungsi untuk mengelola data mahasiswa dengan fitur CRUD, validasi input,  
+dan endpoint khusus untuk menampilkan informasi API.
+
+---
+
+## ⚙️ Fitur Utama
+
+- GET → Menampilkan semua data mahasiswa  
+- GET by ID → Menampilkan data berdasarkan ID  
+- POST → Menambahkan data mahasiswa baru  
+- PUT → Memperbarui data mahasiswa  
+- DELETE → Menghapus data mahasiswa  
+- INFO → Menampilkan informasi layanan API  
+
+---
+
+## 🚀 Cara Menjalankan Proyek
+
+# 1. Clone repository
 git clone https://github.com/RamaKazuya/UTS-WSE-230104040213.git
 
-# 2️⃣ Masuk ke folder project
+# 2. Masuk ke folder project
 cd UTS-WSE-230104040213
 
-# 3️⃣ Install semua dependencies
+# 3. Install dependencies
 npm install
 
-# 4️⃣ Jalankan server (mode development)
+# 4. Jalankan server (development mode)
 npm run dev
 
-# Setelah berhasil, akan muncul di terminal:
-# ✅ Server running on http://localhost:3000
-
-# Buka di Postman atau browser:
-# http://localhost:3000/api/students
+# Jika berhasil, terminal akan menampilkan:
+# Server running on http://localhost:3000
 
 ---
 
-## 📡 Endpoint API
+## 🌐 Endpoint API
 
 # Method | Endpoint | Deskripsi | Status Code
 # ------- | ---------- | ---------- | -------------
@@ -52,7 +68,7 @@ npm run dev
 
 ---
 
-## 🧠 Contoh Data (students.json)
+## 📁 Contoh Data (students.json)
 
 [
   {
@@ -77,15 +93,14 @@ npm run dev
 
 ---
 
-## 🧾 Contoh Validasi
+## 🧾 Validasi Input
 
-# Field wajib diisi:
+# Field yang wajib diisi:
 # - name
 # - npm
 # - major
 
-# Jika salah satu kosong, maka response-nya seperti ini 👇
-
+# Jika salah satu field kosong, server akan merespons seperti berikut:
 {
   "status": "fail",
   "message": "Field 'name' wajib diisi"
@@ -93,9 +108,9 @@ npm run dev
 
 ---
 
-## 🧪 Contoh Request via Postman
+## 📬 Contoh Request (Postman)
 
-# 🔹 Tambah Data (POST)
+# Tambah Data (POST)
 POST http://localhost:3000/api/students
 # Body → raw → JSON
 {
@@ -106,7 +121,7 @@ POST http://localhost:3000/api/students
 
 ---
 
-# 🔹 Update Data (PUT)
+# Update Data (PUT)
 PUT http://localhost:3000/api/students/1
 # Body → raw → JSON
 {
@@ -117,27 +132,26 @@ PUT http://localhost:3000/api/students/1
 
 ---
 
-# 🔹 Hapus Data (DELETE)
+# Hapus Data (DELETE)
 DELETE http://localhost:3000/api/students/3
 
 ---
 
-## ⚙️ Teknologi yang Dipakai
+## 🧰 Teknologi yang Digunakan
 
-# 🟢 Node.js       → Runtime server
-# ⚡ Express.js     → Framework REST API
-# 🔁 Nodemon        → Auto restart server
-# 🌍 CORS           → Mengizinkan cross-domain
-# 🧾 Morgan         → Logging request di console
+# Node.js       → Runtime JavaScript untuk backend
+# Express.js     → Framework REST API
+# Nodemon        → Menjalankan server otomatis saat file berubah
+# CORS           → Mengizinkan akses lintas domain
+# Morgan         → Logging aktivitas request
 
 ---
 
-## 💬 Informasi Tambahan
+## ℹ️ Endpoint Informasi API
 
-# Setelah server jalan, kamu juga bisa cek info API lewat:
 GET http://localhost:3000/api/info
 
-# Contoh response:
+# Response:
 {
   "service": "UTS Web Service - Students Resource",
   "author": "230104040213",
@@ -146,24 +160,9 @@ GET http://localhost:3000/api/info
 
 ---
 
-## 👨‍💻 Developer Team
+## 📄 Lisensi
 
-# 🧑‍🏫 Dosen Pembimbing
-[![GitHub - Muhayat Lab](https://img.shields.io/badge/GitHub-Muhayat--Lab-181717?logo=github&style=for-the-badge)](https://github.com/muhayat-lab)
-
-# 💻 Developer
-[![GitHub - RamaKazuya](https://img.shields.io/badge/GitHub-RamaKazuya-0A66C2?logo=github&style=for-the-badge)](https://github.com/RamaKazuya)
+Proyek ini dibuat untuk keperluan akademik dalam mata kuliah **Web Service Engineering**  
+dan dapat dikembangkan lebih lanjut untuk pembelajaran pribadi.
 
 ---
-
-## 👨‍💻 Author
-
-# Nama: Muhammad Ade Ramadhani
-# NPM: 230104040213
-# Kelas: TI23A
-
-# Dibuat dengan ☕, semangat UTS, dan sedikit rasa ngantuk malam-malam 😆  
-
----
-
-# ⭐ Jangan lupa kasih Star di repo ini kalau menurutmu keren 😎
